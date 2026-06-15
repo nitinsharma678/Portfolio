@@ -935,34 +935,99 @@
     }
 
     /* RESPONSIVE */
-    @media (max-width: 900px) {
-      nav {
-        padding: 16px 24px;
-      }
+ @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 20px;
+  }
 
-      section {
-        padding: 80px 24px;
-      }
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
 
-      #hero {
-        padding: 100px 24px 60px;
-      }
+  .nav-links a {
+    font-size: 11px;
+  }
 
-      .about-grid,
-      .contact-inner {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
+  .nav-resume {
+    padding: 6px 12px;
+    font-size: 10px;
+  }
+}
+    @media (max-width: 768px) {
 
-      .hero-stats {
-        display: none;
-      }
+  /* NAVBAR FIX */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 20px;
+  }
 
-      footer {
-        flex-direction: column;
-        gap: 16px;
-      }
-    }
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 11px;
+  }
+
+  .nav-resume {
+    font-size: 10px;
+    padding: 6px 12px;
+  }
+
+  /* HERO FIX */
+  #hero {
+    flex-direction: column;
+    padding: 100px 20px 40px;
+  }
+
+  h1.hero-name {
+    font-size: 40px;
+  }
+
+  .hero-desc {
+    font-size: 14px;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* SECTIONS FIX */
+  section {
+    padding: 60px 20px;
+  }
+
+  .about-grid,
+  .contact-inner,
+  .skills-grid,
+  .projects-grid,
+  .achieve-list {
+    grid-template-columns: 1fr;
+  }
+
+  /* CURSOR REMOVE (IMPORTANT) */
+  body {
+    cursor: auto;
+  }
+
+  .cursor,
+  .cursor-ring {
+    display: none;
+  }
+}
   </style>
 </head>
 
@@ -1003,7 +1068,7 @@
       <p class="hero-desc">
         Second-year Computer Science student passionate about building interactive web experiences. Skilled in frontend
         development with HTML, CSS, and JavaScript, currently exploring React and backend technologies to become a
-        versatile full-stack developer.
+        versatile full-stack developer.</p>
       <div class="hero-cta">
         <a href="#projects" class="btn-primary">View Projects</a>
         <a href="#contact" class="btn-outline">Get In Touch</a>
