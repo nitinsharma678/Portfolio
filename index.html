@@ -661,6 +661,169 @@
     .about-grid, .contact-inner { grid-template-columns: 1fr; gap: 40px; }
     .hero-stats { display: none; }
     footer { flex-direction: column; gap: 16px; }
+    /* ===== RESPONSIVE IMPROVEMENTS ===== */
+
+img{
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+
+.hero-content,
+.about-grid,
+.skills-grid,
+.projects-grid,
+.contact-inner{
+  width:100%;
+}
+
+@media (max-width:1200px){
+
+  .hero-stats{
+    right:20px;
+  }
+
+  section{
+    padding:90px 40px;
+  }
+
+}
+
+@media (max-width:1024px){
+
+  nav{
+    padding:16px 24px;
+  }
+
+  section{
+    padding:80px 24px;
+  }
+
+  #hero{
+    padding:100px 24px 60px;
+  }
+
+  .hero-name{
+    font-size:72px;
+  }
+
+  .hero-stats{
+    display:none;
+  }
+
+}
+
+@media (max-width:768px){
+
+  .about-grid,
+  .contact-inner{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+
+  .nav-links{
+    gap:14px;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+  }
+
+  .projects-grid{
+    grid-template-columns:1fr;
+  }
+
+  .skills-grid{
+    grid-template-columns:1fr;
+  }
+
+  .achieve-list{
+    grid-template-columns:1fr;
+  }
+
+  .hero{
+    text-align:center;
+  }
+
+  .hero-desc{
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .hero-cta{
+    justify-content:center;
+  }
+
+}
+
+@media (max-width:600px){
+
+  nav{
+    flex-direction:column;
+    gap:12px;
+  }
+
+  .nav-links{
+    justify-content:center;
+  }
+
+  .hero-name{
+    font-size:48px;
+    line-height:1.1;
+  }
+
+  .hero-title{
+    font-size:14px;
+  }
+
+  .hero-desc{
+    font-size:14px;
+  }
+
+  .section-title{
+    font-size:28px;
+  }
+
+  .project-thumb{
+    height:160px;
+  }
+
+  .project-thumb-bg{
+    font-size:48px;
+  }
+
+  .btn-primary,
+  .btn-outline,
+  .btn-resume{
+    width:100%;
+    justify-content:center;
+  }
+
+  footer{
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+  }
+
+}
+
+@media (max-width:400px){
+
+  .hero-name{
+    font-size:38px;
+  }
+
+  .section-title{
+    font-size:24px;
+  }
+
+  .nav-links{
+    gap:10px;
+  }
+
+  .nav-links a{
+    font-size:11px;
+  }
+
+}
   }
 </style>
 </head>
@@ -678,7 +841,7 @@
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
- <a href="Portfolio/Fresher Resume-B.tech 3rd year.pdf"class="nav-resume">Resume</a>
+ <a href="Portfolio/Nitin Sharma.pdf"class="nav-resume">Resume</a>
 
   </div>
 </nav>
